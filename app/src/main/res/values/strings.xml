@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    <string name="title">Information Systems Security Quiz</string>
+
+    <!-- Questions for the quiz -->
+    <string name="question_one">1. A firewall is an example of a(n) ________ control.</string>
+    <string name="question_two">2. The organizational hierarchy can be considered a part of formal controls.</string>
+    <string name="question_three">3. Coordination in threes refers to what three aspects of information security?</string>
+    <string name="questoin_four">4. Privacy of data is ensured by what requirements?</string>
+
+    <!-- Question one answer -->
+    <string name="answer_question_one">technical</string>
+
+    <!-- Question two options -->
+    <string name="answer_true">True</string>
+    <string name="answer_false">False</string>
+
+    <!-- Question three options -->
+    <string name="answer_one">hardware,software,data</string>
+    <string name="answer_two">confidentiality,integrity,availability</string>
+    <string name="answer_three">Timeliness,effectiveness,easiest penetration</string>
+
+    <!-- Question four options -->
+    <string name="option_one">Integrity</string>
+    <string name="option_two">Availability</string>
+    <string name="option_three">Authentication</string>
+    <string name="option_four">Confidentiality</string>
+
+</resources>
