@@ -27,4 +27,7 @@
     <string name="option_three">Authentication</string>
     <string name="option_four">Confidentiality</string>
 
+    <!-- Submit button -->
+    <string name="submit">Submit</string>
+
 </resources>

@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
-            android:paddingBottom="24dp"
+            android:paddingBottom="8dp"
             android:textSize="24sp"
             android:text="@string/title"/>
 
@@ -28,7 +28,7 @@
             android:id="@+id/questionOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
+            style="@style/question_text"
             android:text="@string/question_one"/>
 
         <EditText
@@ -42,8 +42,7 @@
             android:id="@+id/questionTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:paddingBottom="8dp"
+            style="@style/question_text"
             android:text="@string/question_two"/>
 
         <LinearLayout
@@ -52,16 +51,20 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/radio_true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/answer_true"/>
+                android:text="@string/answer_true"
+                android:onClick="onRadioButtonClicked"/>
 
             <RadioButton
+                android:id="@+id/radio_false"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/answer_false"/>
+                android:text="@string/answer_false"
+                android:onClick="onRadioButtonClicked"/>
 
         </LinearLayout>
 
@@ -69,40 +72,42 @@
             android:id="@+id/questionThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:paddingBottom="8dp"
+            style="@style/question_text"
             android:text="@string/question_three"/>
 
         <RadioButton
             android:id="@+id/multipleChoice_answer_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/answer_one"/>
+            android:text="@string/answer_one"
+            android:onClick="onRadioButtonClicked"/>
 
         <RadioButton
             android:id="@+id/multipleChoice_answer_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/answer_two"/>
+            android:text="@string/answer_two"
+            android:onClick="onRadioButtonClicked"/>
 
         <RadioButton
             android:id="@+id/multipleChoice_answer_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/answer_three"/>
+            android:text="@string/answer_three"
+            android:onClick="onRadioButtonClicked"/>
 
         <TextView
             android:id="@+id/questionFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:paddingBottom="8dp"
+            style="@style/question_text"
             android:text="@string/questoin_four"/>
 
         <CheckBox
             android:id="@+id/questionFour_answerOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="isChecked"
             android:text="@string/option_one"
             />
 
@@ -110,6 +115,7 @@
             android:id="@+id/questionFour_answerTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="isChecked"
             android:text="@string/option_two"
             />
 
@@ -117,6 +123,7 @@
             android:id="@+id/questionFour_answerThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="isChecked"
             android:text="@string/option_three"
             />
 
@@ -124,8 +131,25 @@
             android:id="@+id/questionFour_answerFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:onClick="isChecked"
             android:text="@string/option_four"
             />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:onClick="submission"
+                android:text="@string/submit"/>
+
+
+        </RelativeLayout>
 
     </LinearLayout>
 
